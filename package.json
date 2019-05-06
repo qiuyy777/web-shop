@@ -1,0 +1,23 @@
+{
+  "name": "web-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "mongoose": "^5.5.4",
+    "xtemplate": "^4.6.1",
+    "xtpl": "^3.4.0"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0"
+  }
+}

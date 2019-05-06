@@ -1,0 +1,49 @@
+{{extend ("./layout")}}
+{{#block ("link-head")}}
+<link rel="stylesheet" href="../static/css/register.css">           
+{{/block}}
+{{#block ("main")}}
+
+
+<div class="login">
+    <p><img src="" alt=""></p>
+    <h3>注册小米账号</h3>
+    <form action="/signup" method="post" id="signupForm">
+        <ul>
+            <li>            
+            <label for="">
+                用户名：<br><input type="text">
+                </label>
+                </li>
+            <li>            
+            <label for="">
+                邮箱：<br><input type="email">
+                </label>
+                </li>
+            <li>            
+            <label for="">
+                密码：<br><input type="password">
+                </label>
+                </li>
+            <li class="tips">
+              <label class="agreement">
+                <input type="checkbox"  value="agree"/> 愿意遵守小米
+                <a href="">
+                	<strong>用户协议</strong>
+                </a>和
+                <a href="javascript:void(0);"><strong>隐私政策</strong></a>。
+              </label><br> 
+              <a href="/index" class="go-login">已有账号?</a>
+            </li>            
+            <li >
+              <input class="do-register" type="submit" value="注册">
+            </li>
+        </ul>                       
+    </form>
+</div>   
+{{/block}}
+
+{{#block ("script-footer")}}
+
+{{/block}}
+

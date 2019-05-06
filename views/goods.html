@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+  <div class="goods" >
+  	<nav-head >
+  	</nav-head>
+  	<div class="goods-main wrap">
+		<div class="price-sort">
+			价格筛选：
+			<a href="javascript:void(0);">
+				<span @click="setPriceFilter('all')"  v-bind:class="{selected:priceChecked=='all'}">All</span>
+				<span v-for="(item,index) in priceFilter" @click="setPriceFilter(index)" v-bind:class="{selected:priceChecked==index}">{{item.startPrice}}~{{item.endPrice}}</span>
+			</a>
+		</div>		  	
+	  	<ul class="goods-item">
+	  		<li v-for="(item, index) in goodsList" :key="index">
+	  			<div class="like-add">
+	  				<a href="javascript:void(0);" class="item-like">
+	  					<i class="xm_font icon-gift"></i>
+	  					<span class="like">收藏</span>
+	  				</a>
+	  				<a  href="javascript:void(0);" class="item-add" @click="addCart(item)">
+	  					<span class="add" >加入购物车</span>
+	  					<i class="xm_font icon-cart"></i>
+	  				</a>
+	  			</div>
+	  			<a class="item-img" :key="item.productImage">
+	  				
+					<img v-lazy="require('../../assets/images/goodsList/'+item.productImage)"/>
+	  			</a>
+	  			<h5 class="item-desc">
+	  				<a href="/">{{item.productName}}</a>
+	  			</h5>
+	  			<p class="item-price">{{item.salePrice}}元</p>
+	  			<ul class="thumb-list">
+	  				<li class="thumb-img">
+	  					<img :src="require('../../assets/images/goodsList/'+item.productImage)"/>
+	  				</li>
+	  			</ul>
+	  			<div class="item-tag">
+		  			<p class="gift-tag">有赠品</p>
+		  			<p class="discount-tag">有折扣</p>
+	  			</div>
+	  		</li>
+	  	</ul>
+	    <div class="view-more-normal"
+               v-infinite-scroll="loadMore"
+               infinite-scroll-disabled="busy"
+               infinite-scroll-distance="20">
+               <img src="@/assets/images/loading-bars.svg" v-show="loading">
+        </div>
+  	</div>
+</body>
+
+<script>
+
+</script>
+<style >
+
+.goods-main {
+	padding:20px 0;
+	margin:0;
+}
+
+.price-sort {
+	font-size:16px;
+	color:$light-gray;
+	position:relative;
+	line-height:40px;
+		
+
+}		
+a>span {
+		padding:8px;
+		color:$light-gray;			
+
+
+	}		a>span:hover {
+			cursor:pointer;
+			color:$orange;
+		}
+.selected{
+		color:$orange;
+	}
+.goods-item {
+	padding-bottom:40px;
+}
+.goods-item	>li {
+		width:296px;
+		height:430px;
+		margin-bottom:14px;
+		background:#45ac56;
+		background:#fff;
+		float:left;
+		text-align:center;
+		position:relative;
+		transition:all .2s linear;	
+		overflow:hidden;
+}
+.goods-item	>li:not(:nth-child(4n)){
+		margin-right:14px;
+}
+
+.goods-item	>li:hover {
+	transform: translateY(-2px);
+	box-shadow:0px 5px 10px 2px #ccc;
+	.like-add{
+		visibility:visible;
+	}
+}
+.like-add {
+	width:100%;
+	padding:10px 20px;
+	visibility:hidden;
+	box-sizing:border-box;
+
+
+}	
+
+	a {	
+		color:$deep-gray;
+
+	}
+	.item-like {
+		float:left;
+	}
+	.item-add {
+	float:right;
+	}
+
+.item-img {
+	display:block;
+	text-align:center;
+}
+.item-img img {
+	width:200px;
+	
+}
+.item-desc,.item-price {
+	text-align:center;
+}
+.item-desc a {
+	color:$deep-gray;
+}
+.item-price {
+	color:$orange;
+	line-height:30px;
+}
+.thumb-list {
+	margin:0 auto;
+	margin-top:5px;		
+	display:table;
+}
+
+.thumb-list  li {
+	width:34px;
+	height:34px;
+	float:left;
+	border:1px solid $light-gray;
+	margin:0 5px;
+}
+
+.thumb-list  li	img {
+	width:34px;
+	height:34px;
+}
+.thumb-list  li :hover {
+	border-color:$orange;
+	cursor:pointer;
+}
+.item-tag {
+	width:100%;
+	color:$white;
+	font-size:12px;
+	text-align:left;
+	text-indent:10px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+.gift-tag {
+	background:$gift-blue;
+}
+.discount-tag {
+	background:$discount-red;
+}
+</style>
+</html>

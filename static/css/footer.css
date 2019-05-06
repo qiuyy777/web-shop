@@ -1,0 +1,129 @@
+.site-end{
+	color:#444;
+}
+.site-end ul li{
+	float:left;
+	font-size:16px;
+}
+.site-end a{
+	color:#555;
+}
+.surport{
+	width:100%;
+	height:273px;
+	background:#fff;
+}
+.customer-server{
+	margin:0 auto;
+	width:1226px;
+	padding:25px 0;
+	height:26px;
+	border-bottom:1px solid #ddd;
+
+}
+.customer-server li{
+	margin:auto 0;
+	font-size:16px;
+	height:26px;
+	width:242px;
+	text-align:center;
+}
+.customer-server li:nth-child(-n+4){
+	border-right:1px solid #ddd;
+}
+.customer-server li a i{
+	font-size:26px;
+	vertical-align:-4px;
+}
+.help{
+	width:1226px;
+	margin:0 auto;
+	padding:40px 0;
+
+}
+.help dl{
+	float:left;
+	width:162px;
+}
+.help dl:nth-last-child(2) {
+	border-right:1px solid #ddd;
+}
+.help dt{
+	font-size:16px;
+	line-height:48px;
+}
+.help dl a{
+	display:block;
+	font-size:12px;
+	color:#666;
+	line-height:24px;
+}
+.help dl a:hover{
+	color:#ff6b00;
+}
+.help>div{
+	height:100%;
+	float:left;
+	padding-left:40px;
+	text-align:center;
+}
+.help>div h5{
+	color:#ff6b00;
+	font-size:24px ;
+	margin-top:10px;
+	margin-bottom:3px;
+}
+.help>div p{
+	font-size:12px;
+}
+.help>div a{
+	display:block;
+	width:117px;
+	height:27px;
+	color:#ff6b00;
+	font-size:12px;
+	border:1px solid #ff6b00;
+	line-height:27px;
+	margin-top:15px;
+	margin-left:10px;
+}
+.help>div a:hover{
+	background:#ff6b00;
+	color:#fff;
+};
+.surport .contact{
+	font-size:24px;
+}
+.legal{
+	width:1226px;
+	height:57px;
+	margin:auto;
+	padding-top:30px;
+	line-height:18px;
+}
+.legal img:nth-child(1){
+	margin-right:10px;
+	float:left;
+}
+.f-products{
+	font:12px "Helvetica Neue";
+	line-height:18px;
+	float:left;
+}
+.f-products p:nth-child(2){
+	color:#bbb;
+}
+.f-img-group img:nth-child(1){
+	width:83px;
+	height:28px;
+}
+.f-img-group{
+	float:right;
+}
+.site-end .slogan{
+	margin:35px 0;
+	font-family:"华文楷体";
+	font-size:24px;
+	text-align:center;
+	color:#bbb;
+}

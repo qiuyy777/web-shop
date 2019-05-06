@@ -1,0 +1,80 @@
+.login{
+	background:#fff;
+	width:856px;
+	height:546px;
+	margin:60px auto;
+}
+.login h3{
+	font-size:30px;
+	text-align:center;
+	margin:40px;
+	font-weight:500;
+}
+.login form{
+	width:330px;
+	margin:0 auto;
+	height:100%;
+}
+form li{
+	margin-bottom:20px;
+	font-size:16px;
+	color:#888;
+}
+input{
+	height:22px;
+	width:320px;
+	font-size:16px;
+	color:#888;
+	border: 1px solid #DBDBDB;
+	border-radius:5px;
+	padding:5px;
+}
+
+input:focus{
+	border-radius:5px;
+	outline:none;
+	border-color:#ff6b00;
+}
+.agreement{
+	vertical-align:middle;
+	margin:10px 0;
+}
+.agreement input[type="checkbox"]{
+	height:18px;
+	width:18px;
+	line-height:18px;
+	vertical-align:middle;
+    cursor: pointer;
+    position:relative;
+    border:1px solid #ff6b00;
+    background:#fff;
+    border-radius:0;
+    top:-2px;
+}
+.agreement input[type="checkbox"]:checked::before{
+    content: '\2714';
+    color:white;
+    background-color:#ff6b00;   
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-size:16px;      
+}
+.tips{
+	font-size:14px;
+	line-height: 28px;
+}
+input.do-register{
+	background:#ff6b00;
+	width:100px;
+	height:32px;
+	color:#fff;
+	float:right;
+	border:none;
+}
+.do-register:hover{
+	cursor:pointer;
+}

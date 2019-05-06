@@ -1,0 +1,1770 @@
+<div class="site-top">
+    <div class="nav-site">
+        <div class="wrap">
+            <div class="site-map">
+                <a href="javascript:void(0);" class="vertical-line">小米商城</a>
+                <a href="javascript:void(0);" class="vertical-line">MUI</a>
+                <a href="javascript:void(0);" class="vertical-line">loT</a>
+                <a href="javascript:void(0);" class="vertical-line">云服务</a>
+                <a href="javascript:void(0);" class="vertical-line">金融</a>
+                <a href="javascript:void(0);" class="vertical-line">有品</a>
+                <a href="javascript:void(0);" class="vertical-line">小爱开放平台</a>
+                <a href="javascript:void(0);" class="vertical-line">政企服务</a>
+                <a href="javascript:void(0);">Select Region</a>
+            </div>
+            <ul class="site-user">
+                {{#if (userName)}}
+                <li class="cart-infoLeft" id="has-login">
+                    <a>{{userName}}<span></span></a>
+                    <ul class="user-menu">
+                        <li><a href="/user">个人中心</a></li>
+                        <li><a href="javascript:void(0);">评价晒单</a></li>
+                        <li><a href="javascript:void(0);">我的喜欢</a></li>
+                        <li><a href="javascript:void(0);">小米账户</a></li>
+                        <li><a href="/index/logout">退出登录</a></li>
+                    </ul>
+                </li>
+                <li class="my-order">
+                    <a href="javascript:void(0);">我的订单</a>
+                </li>
+                {{else}}
+                <li class="log-state" id="login-signup">
+                    <a id="login" href="javascript:void(0);">登录</a>
+                    <a href="/register">注册</a>
+                </li>
+                {{/if}}
+                <li class="message-info">
+                    <a href="javascript:void(0);">消息通知</a>
+                </li>
+                <li class="user-cart">
+                    <a href="javascript:void(0);">
+                        <i class="xm_font icon-cart"></i> 购物车( {{#if (userName)}}
+                        <span class="cart-qty">14</span>) {{else}}
+                        <span class="cart-qty">0</span>) {{/if}}
+                    </a>
+                    {{#if (userName)}}
+                    <div class="cart-dropdown">
+                        <ul class="cart-items">
+                            <li>
+                                <div class="cart-item-wrap">
+                                    <a href="javascript:void(0);">
+                                        <img src="../static/images/tv.jpg" alt="">
+                                    </a>
+                                    <a href="javascript:void(0);">小米usb充电器(100W)白色</a>
+                                    <span class="price">19.9元 × 2</span>
+                                    <a href="javascript:void(0);" class="delete">X</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-item-wrap">
+                                    <a href="javascript:void(0);">
+                                        <img src="../static/images/tv.jpg" alt="">
+                                    </a>
+                                    <a href="javascript:void(0);">小米usb充电器(100W)白色</a>
+                                    <span class="price">19.9元 × 2</span>
+                                    <a class="delete">X</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-item-wrap">
+                                    <a href="javascript:void(0);">
+                                        <img src="../static/images/tv.jpg" alt="">
+                                    </a>
+                                    <a href="javascript:void(0);">小米usb充电器(100W)白色</a>
+                                    <span class="price">19.9元 × 2</span>
+                                    <a class="delete">X</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-item-wrap">
+                                    <a href="javascript:void(0);">
+                                        <img src="../static/images/tv.jpg" alt="">
+                                    </a>
+                                    <a href="javascript:void(0);">小米usb充电器(100W)白色</a>
+                                    <span class="price">19.9元 × 2</span>
+                                    <a class="delete">X</a>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <div class="cart-item-wrap">
+                                    <a href="javascript:void(0);">
+                                        <img src="../static/images/tv.jpg" alt=""></a>
+                                    <a href="javascript:void(0);">小米usb充电器(100W)白色</a>
+                                    <span class="price">19.9元 × 2</span>
+                                    <a class="delete">X</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-item-wrap">
+                                    <a href="javascript:void(0);">
+                                        <img src="../static/images/tv.jpg" alt=""></a>
+                                    <a href="javascript:void(0);">小米usb充电器(100W)白色</a>
+                                    <span class="price">19.9元 × 2</span>
+                                    <a class="delete">X</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-item-wrap">
+                                    <a href="javascript:void(0);">
+                                        <img src="../static/images/tv.jpg" alt=""></a>
+                                    <a href="javascript:void(0);">小米usb充电器(100W)白色</a>
+                                    <span class="price">19.9元 × 2</span>
+                                    <a class="delete">X</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <div class="cart-checkout">
+                            <div class="total-amount">
+                                <span>共14件商品</span><br>
+                                <span class="cart-total">477.7元</span>
+                            </div>
+                            <a href="javascript:void(0);" class="go-checkout">去结算</a>
+                        </div>
+                    </div>
+                    {{/if}}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav-shop ">
+        <div class="wrap">
+            <div class="mi-logo">
+                <a href="/index" title="小米官网">
+                    <img src="../static/images/mi-logo.png" alt="">
+                </a>
+            </div>
+            <ul class="shop-cata">
+                <li class="cata-all">
+                    <a href="javascript:void(0);">全部商品分类</a>
+                    <ul class="cata-allSort">
+                        <li class="menu-items">
+                            <a href="javascript:void(0);">手机 电话卡<i class="xm_font icon-right"></i></a>
+                            <div class="menu-more">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-items toggle-triggers ">
+                            <a href="javascript:void(0);">电视 盒子<i class="xm_font icon-right"></i></a>
+                            <div class="menu-more">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-items toggle-triggers ">
+                            <a href="javascript:void(0);">笔记 本平板<i class="xm_font icon-right"></i></a>
+                            <div class="menu-more">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米3</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-items toggle-triggers">
+                            <a href="javascript:void(0);">智能家电<i class="xm_font icon-right"></i></a>
+                            <div class="menu-more">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-items toggle-triggers">
+                            <a href="javascript:void(0);">健康家居<i class="xm_font icon-right"></i></a>
+                            <div class="menu-more">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-items toggle-triggers">
+                            <a href="javascript:void(0);">出行儿童<i class="xm_font icon-right"></i></a>
+                            <div class="menu-more">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-items toggle-triggers">
+                            <a href="javascript:void(0);">路由器 手机配件<i class="xm_font icon-right"></i></a>
+                            <div class="menu-more">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-items toggle-triggers">
+                            <a href="javascript:void(0);">移动电源 插线板<i class="xm_font icon-right"></i></a>
+                            <div class="menu-more">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="menu-items toggle-triggers">
+                            <a href="javascript:void(0);">耳机 音箱<i class="xm_font icon-right"></i></a>
+                            <div class="menu-more">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li class="menu-items toggle-triggers">
+                            <a href="javascript:void(0);">生活 米兔<i class="xm_font icon-right"></i></a>
+                            <div class="menu-more">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="../static/images/item-s.jpg" alt="">
+                                            <span>小米1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cata-item menu-dropdown">小米手机</li>
+                <li class="cata-item menu-dropdown">红米</li>
+                <li class="cata-item menu-dropdown">电视</li>
+                <li class="cata-item menu-dropdown">笔记本</li>
+                <li class="cata-item menu-dropdown">盒子</li>
+                <li class="cata-item menu-dropdown">新品</li>
+                <li class="cata-item menu-dropdown">路由器</li>
+                <li class="cata-item menu-dropdown">智能硬件</li>
+                <li><a href="javascript:void(0);">服务</a></li>
+                <li><a href="javascript:void(0);">社区</a></li>
+            </ul>
+            <div class="search">
+                <input type="text">
+                <div class="search-tag">
+                    <a hreft="#">小米8</a>
+                    <a hreft="#">小米MIX 2S</a>
+                </div>
+                <a class="search-logo" href="#">
+                    <i class="xm_font icon-search"></i>
+                </a>
+            </div>
+        </div>
+        <div class="fluid-menu">
+            <div class="wrap">
+                <ul class="nav-header-more">
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                </ul>
+                <ul class="nav-header-more">
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">红米手机</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">红米手机</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">红米手机</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">红米手机</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">红米手机</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">红米手机</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                </ul>
+                <ul class="nav-header-more">
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/tv.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">电视</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/tv.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">电视</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/tv.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">电视</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/tv.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">电视</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/tv.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">电视</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/tv.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">电视</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                </ul>
+                <ul class="nav-header-more">
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                </ul>
+                <ul class="nav-header-more">
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                </ul>
+                <ul class="nav-header-more">
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">红米手机</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">红米手机</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">红米手机</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">红米手机</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">红米手机</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">红米手机</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                </ul>
+                <ul class="nav-header-more">
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/tv.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">电视</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/tv.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">电视</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/tv.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">电视</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/tv.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">电视</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/tv.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">电视</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/tv.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">电视</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                </ul>
+                <ul class="nav-header-more">
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                    <li class="content">
+                        <p class="new">新品</p>
+                        <div class="goods-image">
+                            <a href="javascript:void(0);">
+                                <img src="../static/images/xm8-s.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="goods-name"><a href="javascript:void(0);">小米8</a></p>
+                        <p class="goods-price">2999起</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

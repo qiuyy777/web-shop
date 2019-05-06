@@ -1,0 +1,118 @@
+.breadcrumb{
+	line-height:40px;
+	font-size:;
+}
+.center-left,.center-right{
+	float:left;
+	background:#fff;
+	height:800px;
+}
+.center-left{
+	width:134px;
+	margin-right:14px;
+	margin-bottom:30px;
+}
+
+.center-left{
+	padding:30px 50px;
+}
+.center-left dl{
+	margin-bottom:15px;
+}
+.center-left dt{
+	margin:10px 0;
+	font-size:18px;
+	color:#444;
+}
+.center-left dd a{
+	color:#888;
+	font-size:14px;
+	line-height:28px;
+}
+.center-right{
+	width:880px;
+	padding:0 49px;
+	color:#888;
+}
+.center-right span{
+	color:#ff6b00;
+}
+.user-info{
+	height:200px;
+	margin-top:60px;
+}
+.user-info{
+	border-bottom:1px solid #ddd;
+}
+.user-info>div{
+	float:left;
+}
+.user{
+	height:163px;
+	width:440px;
+	margin-bottom:23px;
+}
+.user img{
+	display:block;
+	float:left;
+	width:162px;
+	height:163px;
+}
+.user>div,.account>div{
+	float:left;
+	margin-left:20px;
+	padding-top:40px;
+}
+.user>div p:first-child{
+	font-size:28px;
+}
+.user>div p:last-child a{
+	color:#ff6b00;
+	line-height:28px;
+	font-size:12px;
+}
+.account{
+	width:330px;
+	padding-left:110px;
+	height:163px;
+	padding-top:40px;
+	position:relative;
+}
+.account p{
+	line-height:33px;
+}
+.account a{
+	display:inline-block;
+	line-height:32px;
+	color:#fff;
+	background:#ff6b00;
+	padding:0 50px;
+	margin-left:130px;
+}
+.order-info{
+	padding-bottom:100px;
+}
+.order-info>div{
+	margin-top:80px;
+	float:left;
+	width:420px;
+}
+.order-info>div img{
+	display:block;
+	float:left;
+	margin-right:20px;
+}
+.order-info .order-desc{
+	float:left;
+	padding-top:28px;
+
+}
+.order-desc p:first-child{
+	font-size:18px;
+}
+.order-desc a{
+	color:#888;
+}
+.order-desc a:hover{
+	color:#ff6b00;
+}
