@@ -105,7 +105,7 @@ $(window).ready(function(){
 
 	//倒计时
 
-	function countDownTime();() {
+	function countDownTime() {
 		let result = '';
 		let deadline = 22;
 		setInterval(() => {
