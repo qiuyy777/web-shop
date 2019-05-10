@@ -1,5 +1,8 @@
 ### 简介
 
+线上地址: 
+qiuyy.info
+
 页面由index主页和user用户构成。
 
 主要是用来练习html和css以及一些js,jq的一些动画
